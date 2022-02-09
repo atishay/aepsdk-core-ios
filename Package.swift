@@ -31,7 +31,10 @@ let package = Package(
     targets: [
         .target(name: "AEPCore",
                 dependencies: ["AEPServices", "AEPRulesEngine"],
-                path: "AEPCore/Sources"),
+                path: "AEPCore/Sources"
+                publicHeadersPath: ".",
+                cSettings: [
+                    .headerSearchPath(".")],),
         .target(name: "AEPIdentity",
                 dependencies: ["AEPCore"],
                 path: "AEPIdentity/Sources"),
