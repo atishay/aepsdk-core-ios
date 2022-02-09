@@ -34,7 +34,7 @@ let package = Package(
                 path: "AEPCore/Sources"
                 publicHeadersPath: ".",
                 cSettings: [
-                    .headerSearchPath(".")],),
+                    .headerSearchPath(".")]),
         .target(name: "AEPIdentity",
                 dependencies: ["AEPCore"],
                 path: "AEPIdentity/Sources"),
