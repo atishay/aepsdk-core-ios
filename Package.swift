@@ -31,7 +31,7 @@ let package = Package(
     targets: [
         .target(name: "AEPCore",
                 dependencies: ["AEPServices", "AEPRulesEngine"],
-                path: "AEPCore/Sources"
+                path: "AEPCore/Sources",
                 publicHeadersPath: ".",
                 cSettings: [
                     .headerSearchPath(".")]),
